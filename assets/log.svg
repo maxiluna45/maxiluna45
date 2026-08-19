@@ -1,104 +1,385 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340"
-     font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" fill="none">
   <defs>
-    <pattern id="scan3" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="4" fill="#0d0d0d"/>
-      <rect width="4" height="1" fill="#000000" opacity="0.14"/>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1116"/>
+      <stop offset="1" stop-color="#05080b"/>
+    </linearGradient>
+    <linearGradient id="roll3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ff5c7" stop-opacity="0"/>
+      <stop offset="0.42" stop-color="#9ff5c7" stop-opacity="0.03"/>
+      <stop offset="0.5" stop-color="#9ff5c7" stop-opacity="0.07"/>
+      <stop offset="0.58" stop-color="#9ff5c7" stop-opacity="0.03"/>
+      <stop offset="1" stop-color="#9ff5c7" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vig3" cx="50%" cy="42%" r="75%">
+      <stop offset="58%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.48"/>
+    </radialGradient>
+    <linearGradient id="glass3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="28%" stop-color="#ffffff" stop-opacity="0.018"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="scan3" width="4" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0.5" x2="4" y2="0.5" stroke="#000000" stroke-opacity="0.22" stroke-width="1"/>
     </pattern>
     <clipPath id="lc"><rect x="0" y="0" width="960" height="340" rx="10"/></clipPath>
   </defs>
 
-  <rect x="0" y="0" width="960" height="340" rx="10" fill="#0d0d0d"/>
-
-  <!-- HEADER -->
-  <rect x="16" y="12" width="8" height="8" fill="#e6e6e6"/>
-  <text x="32" y="20" font-size="14" fill="#e6e6e6" letter-spacing="2">SESSION.LOG</text>
-  <rect x="152" y="11" width="8" height="13" fill="#e6e6e6">
-    <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
-  </rect>
-  <text x="852" y="20" font-size="11" fill="#555555" text-anchor="end">/var/log/career.log</text>
-
-  <!-- pixel-art terminal -->
-  <g>
-    <rect x="864" y="4" width="40" height="28" fill="#141414" stroke="#3a3a3a"/>
-    <rect x="864" y="4" width="40" height="6" fill="#262626"/>
-    <rect x="867" y="6" width="2" height="2" fill="#555555"/>
-    <rect x="871" y="6" width="2" height="2" fill="#555555"/>
-    <rect x="875" y="6" width="2" height="2" fill="#555555"/>
-    <rect x="868" y="12" width="32" height="16" fill="#0d0d0d"/>
-    <rect x="871" y="15" width="20" height="2" fill="#3a3a3a">
-      <animate attributeName="opacity" values="0;1;1" dur="1.5s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="871" y="19" width="14" height="2" fill="#3a3a3a">
-      <animate attributeName="opacity" values="0;0;1;1" dur="1.5s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="871" y="23" width="3" height="3" fill="#e6e6e6">
-      <animate attributeName="opacity" values="1;1;0;0" dur="0.8s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="878" y="32" width="12" height="3" fill="#3a3a3a"/>
-    <rect x="872" y="35" width="24" height="3" fill="#3a3a3a"/>
-  </g>
-  <line x1="16" y1="40" x2="944" y2="40" stroke="#262626"/>
-
-  <!-- LEFT : EXPERIENCE -->
-  <rect x="16" y="48" width="456" height="196" rx="8" fill="#141414" stroke="#262626"/>
-  <rect x="32" y="62" width="7" height="7" fill="#e6e6e6"/>
-  <text x="46" y="70" font-size="13" fill="#e6e6e6" letter-spacing="2">EXPERIENCE</text>
-  <line x1="32" y1="80" x2="456" y2="80" stroke="#262626"/>
-
-  <text x="32" y="102" font-size="11" fill="#8a8a8a">2024 - NOW</text>
-  <circle cx="37" cy="115" r="3" fill="#e6e6e6">
-    <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
-  </circle>
-  <text x="48" y="119" font-size="14" fill="#e6e6e6">OCTUPUS</text>
-  <text x="32" y="137" font-size="11" fill="#b0b0b0">Developer Automation Engineer - Full-Stack</text>
-  <text x="32" y="155" font-size="11" fill="#8a8a8a">Vue / React / Django / FastAPI / Nest.js</text>
-  <text x="32" y="171" font-size="11" fill="#8a8a8a">CI/CD / Jenkins / GitHub Actions / Azure</text>
-  <text x="32" y="187" font-size="11" fill="#8a8a8a">Docker / Nginx / Keycloak IAM / PostgreSQL</text>
-
-  <line x1="32" y1="200" x2="456" y2="200" stroke="#202020"/>
-
-  <text x="32" y="220" font-size="11" fill="#8a8a8a">2018 - 2019</text>
-  <text x="32" y="238" font-size="14" fill="#e6e6e6">MCAFEE</text>
-  <text x="32" y="254" font-size="11" fill="#b0b0b0">Pasantia - Soporte Tecnico / Cordoba, AR</text>
-
-  <!-- RIGHT : PROJECTS -->
-  <rect x="488" y="48" width="456" height="196" rx="8" fill="#141414" stroke="#262626"/>
-  <rect x="504" y="62" width="7" height="7" fill="#e6e6e6"/>
-  <text x="518" y="70" font-size="13" fill="#e6e6e6" letter-spacing="2">PROJECTS</text>
-  <line x1="504" y1="80" x2="928" y2="80" stroke="#262626"/>
-
-  <text x="504" y="102" font-size="14" fill="#e6e6e6">FITLOGIC</text>
-  <text x="504" y="120" font-size="11" fill="#b0b0b0">SaaS multi-tenant / 3 centros / 200+ usuarios</text>
-  <text x="504" y="138" font-size="11" fill="#8a8a8a">Nuxt.js / Prisma / Supabase / Docker</text>
-  <text x="504" y="154" font-size="11" fill="#8a8a8a">Analiticas IA / RBAC / Backups / Sentry</text>
-
-  <line x1="504" y1="170" x2="928" y2="170" stroke="#202020"/>
-
-  <text x="504" y="192" font-size="14" fill="#e6e6e6">TRAFFIC-FE</text>
-  <text x="504" y="210" font-size="11" fill="#b0b0b0">Deteccion de infracciones / OCR / React</text>
-  <text x="504" y="228" font-size="11" fill="#8a8a8a">OCI Identity / JWT / Accesibilidad &lt; 3s</text>
-
-  <!-- BOTTOM : EDUCATION + AWARDS -->
-  <rect x="16" y="260" width="928" height="64" rx="8" fill="#141414" stroke="#262626"/>
-  <rect x="32" y="274" width="7" height="7" fill="#e6e6e6"/>
-  <text x="46" y="282" font-size="13" fill="#e6e6e6" letter-spacing="2">EDUCATION</text>
-  <text x="32" y="302" font-size="12" fill="#b0b0b0">UTN FR Cordoba - Ing. en Sistemas de Informacion</text>
-  <text x="32" y="318" font-size="11" fill="#8a8a8a">2019 - 2024</text>
-
-  <line x1="620" y1="272" x2="620" y2="312" stroke="#262626"/>
-
-  <rect x="640" y="274" width="7" height="7" fill="#e6e6e6"/>
-  <text x="654" y="282" font-size="13" fill="#e6e6e6" letter-spacing="2">AWARDS</text>
-  <text x="640" y="302" font-size="12" fill="#b0b0b0">Premio "Ing. Isidoro Marin" / 2025</text>
-  <text x="640" y="318" font-size="11" fill="#8a8a8a">1er escolta bandera / prom. 9.51 / tesis 10/10</text>
-
-  <!-- scan overlay + CRT roll -->
-  <rect x="0" y="0" width="960" height="340" rx="10" fill="url(#scan3)"/>
+  <rect width="960" height="340" rx="10" fill="url(#bg3)"/>
   <g clip-path="url(#lc)">
-    <rect x="0" y="0" width="960" height="60" fill="#ffffff" opacity="0.03">
-      <animateTransform attributeName="transform" type="translate" from="0 -60" to="0 340" dur="6s" repeatCount="indefinite"/>
+    <rect x="0" y="-340" width="960" height="340" fill="url(#roll3)">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="0 680" dur="7s" repeatCount="indefinite"/>
     </rect>
+    <g font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+      <rect x="16" y="12" width="8" height="8" fill="#58f0a8"/>
+      <text x="32" y="20" font-size="14" fill="#e6edf3" letter-spacing="2">SESSION.LOG</text>
+      <rect x="152" y="11" width="8" height="13" fill="#58f0a8">
+        <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
+      </rect>
+      <text x="848" y="20" font-size="11" fill="#5b6a77" text-anchor="end">/var/log/career.log</text>
+
+      <g>
+        <rect x="864" y="4" width="40" height="28" fill="#0a1116" stroke="#22313c"/>
+        <rect x="864" y="4" width="40" height="6" fill="#0f1a22"/>
+        <rect x="867" y="6" width="2" height="2" fill="#58f0a8"/>
+        <rect x="871" y="6" width="2" height="2" fill="#2bbf7d"/>
+        <rect x="875" y="6" width="2" height="2" fill="#126b47"/>
+        <rect x="868" y="12" width="32" height="16" fill="#05080b"/>
+        <rect x="871" y="15" width="20" height="2" fill="#2bbf7d">
+          <animate attributeName="opacity" values="0;1;1" dur="1.5s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="871" y="19" width="14" height="2" fill="#126b47">
+          <animate attributeName="opacity" values="0;0;1;1" dur="1.5s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="871" y="23" width="3" height="3" fill="#58f0a8">
+          <animate attributeName="opacity" values="1;1;0;0" dur="0.8s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="878" y="32" width="12" height="3" fill="#22313c"/>
+        <rect x="872" y="35" width="24" height="3" fill="#22313c"/>
+      </g>
+
+      <line x1="16" y1="40" x2="944" y2="40" stroke="#22313c"/>
+
+      <rect x="16" y="48" width="456" height="196" rx="8" fill="#0d151c" stroke="#22313c"/>
+<g shape-rendering="crispEdges">
+<rect x="32" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="60" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="60" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="60" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="60" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="60" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="60" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="60" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="60" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="62" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="62" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="62" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="62" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="62" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="62" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="62" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="62" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="64" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="64" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="64" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="64" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="64" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="64" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="64" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="64" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="66" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="66" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="66" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="66" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="66" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="66" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="66" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="66" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="68" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="68" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="68" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="68" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="68" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="68" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="68" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="68" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="72" width="2" height="2" fill="#063a26"/>
+</g>
+<text x="56" y="70" font-size="13" fill="#e6edf3" letter-spacing="2">EXPERIENCE</text>
+
+      <line x1="32" y1="80" x2="456" y2="80" stroke="#22313c"/>
+
+      <text x="32" y="102" font-size="11" fill="#5b6a77">2024 - NOW</text>
+      <circle cx="37" cy="115" r="3" fill="#58f0a8">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="48" y="119" font-size="14" fill="#e6edf3">OCTUPUS</text>
+      <text x="32" y="137" font-size="11" fill="#9aa7b4">Developer Automation Engineer - Full-Stack</text>
+      <text x="32" y="155" font-size="11" fill="#5b6a77">Vue / React / Django / FastAPI / Nest.js</text>
+      <text x="32" y="171" font-size="11" fill="#5b6a77">CI/CD / Jenkins / GitHub Actions / Azure</text>
+      <text x="32" y="187" font-size="11" fill="#5b6a77">Docker / Nginx / Keycloak IAM / PostgreSQL</text>
+
+      <line x1="32" y1="200" x2="456" y2="200" stroke="#1f2a35"/>
+
+      <text x="32" y="220" font-size="11" fill="#5b6a77">2018 - 2019</text>
+      <text x="32" y="238" font-size="14" fill="#e6edf3">MCAFEE</text>
+      <text x="32" y="254" font-size="11" fill="#9aa7b4">Pasantia - Soporte Tecnico / Cordoba, AR</text>
+
+      <rect x="488" y="48" width="456" height="196" rx="8" fill="#0d151c" stroke="#22313c"/>
+<g shape-rendering="crispEdges">
+<rect x="504" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="506" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="508" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="510" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="512" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="514" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="516" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="518" y="58" width="2" height="2" fill="#063a26"/>
+<rect x="504" y="60" width="2" height="2" fill="#063a26"/>
+<rect x="506" y="60" width="2" height="2" fill="#126b47"/>
+<rect x="508" y="60" width="2" height="2" fill="#126b47"/>
+<rect x="510" y="60" width="2" height="2" fill="#126b47"/>
+<rect x="512" y="60" width="2" height="2" fill="#126b47"/>
+<rect x="514" y="60" width="2" height="2" fill="#126b47"/>
+<rect x="516" y="60" width="2" height="2" fill="#126b47"/>
+<rect x="518" y="60" width="2" height="2" fill="#063a26"/>
+<rect x="504" y="62" width="2" height="2" fill="#063a26"/>
+<rect x="506" y="62" width="2" height="2" fill="#126b47"/>
+<rect x="508" y="62" width="2" height="2" fill="#58f0a8"/>
+<rect x="510" y="62" width="2" height="2" fill="#58f0a8"/>
+<rect x="512" y="62" width="2" height="2" fill="#58f0a8"/>
+<rect x="514" y="62" width="2" height="2" fill="#58f0a8"/>
+<rect x="516" y="62" width="2" height="2" fill="#58f0a8"/>
+<rect x="518" y="62" width="2" height="2" fill="#063a26"/>
+<rect x="504" y="64" width="2" height="2" fill="#063a26"/>
+<rect x="506" y="64" width="2" height="2" fill="#126b47"/>
+<rect x="508" y="64" width="2" height="2" fill="#58f0a8"/>
+<rect x="510" y="64" width="2" height="2" fill="#126b47"/>
+<rect x="512" y="64" width="2" height="2" fill="#126b47"/>
+<rect x="514" y="64" width="2" height="2" fill="#126b47"/>
+<rect x="516" y="64" width="2" height="2" fill="#58f0a8"/>
+<rect x="518" y="64" width="2" height="2" fill="#063a26"/>
+<rect x="504" y="66" width="2" height="2" fill="#063a26"/>
+<rect x="506" y="66" width="2" height="2" fill="#126b47"/>
+<rect x="508" y="66" width="2" height="2" fill="#58f0a8"/>
+<rect x="510" y="66" width="2" height="2" fill="#58f0a8"/>
+<rect x="512" y="66" width="2" height="2" fill="#58f0a8"/>
+<rect x="514" y="66" width="2" height="2" fill="#58f0a8"/>
+<rect x="516" y="66" width="2" height="2" fill="#58f0a8"/>
+<rect x="518" y="66" width="2" height="2" fill="#063a26"/>
+<rect x="504" y="68" width="2" height="2" fill="#063a26"/>
+<rect x="506" y="68" width="2" height="2" fill="#126b47"/>
+<rect x="508" y="68" width="2" height="2" fill="#126b47"/>
+<rect x="510" y="68" width="2" height="2" fill="#126b47"/>
+<rect x="512" y="68" width="2" height="2" fill="#126b47"/>
+<rect x="514" y="68" width="2" height="2" fill="#126b47"/>
+<rect x="516" y="68" width="2" height="2" fill="#126b47"/>
+<rect x="518" y="68" width="2" height="2" fill="#063a26"/>
+<rect x="504" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="506" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="508" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="510" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="512" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="514" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="516" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="518" y="70" width="2" height="2" fill="#063a26"/>
+<rect x="504" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="506" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="508" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="510" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="512" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="514" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="516" y="72" width="2" height="2" fill="#063a26"/>
+<rect x="518" y="72" width="2" height="2" fill="#063a26"/>
+</g>
+<text x="528" y="70" font-size="13" fill="#e6edf3" letter-spacing="2">PROJECTS</text>
+
+      <line x1="504" y1="80" x2="928" y2="80" stroke="#22313c"/>
+
+      <rect x="504" y="95" width="4" height="12" fill="#58f0a8"/>
+      <text x="514" y="102" font-size="14" fill="#e6edf3">FITLOGIC</text>
+      <text x="504" y="120" font-size="11" fill="#9aa7b4">SaaS multi-tenant / 3 centros / 200+ usuarios</text>
+      <text x="504" y="138" font-size="11" fill="#5b6a77">Nuxt.js / Prisma / Supabase / Docker</text>
+      <text x="504" y="154" font-size="11" fill="#5b6a77">Analiticas IA / RBAC / Backups / Sentry</text>
+
+      <line x1="504" y1="170" x2="928" y2="170" stroke="#1f2a35"/>
+
+      <rect x="504" y="185" width="4" height="12" fill="#58f0a8"/>
+      <text x="514" y="192" font-size="14" fill="#e6edf3">TRAFFIC-FE</text>
+      <text x="504" y="210" font-size="11" fill="#9aa7b4">Deteccion de infracciones / OCR / React</text>
+      <text x="504" y="228" font-size="11" fill="#5b6a77">OCI Identity / JWT / Accesibilidad &lt; 3s</text>
+
+      <rect x="16" y="260" width="928" height="64" rx="8" fill="#0d151c" stroke="#22313c"/>
+<g shape-rendering="crispEdges">
+<rect x="32" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="274" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="274" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="274" width="2" height="2" fill="#126b47"/>
+<rect x="38" y="274" width="2" height="2" fill="#126b47"/>
+<rect x="40" y="274" width="2" height="2" fill="#126b47"/>
+<rect x="42" y="274" width="2" height="2" fill="#126b47"/>
+<rect x="44" y="274" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="274" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="276" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="276" width="2" height="2" fill="#126b47"/>
+<rect x="36" y="276" width="2" height="2" fill="#58f0a8"/>
+<rect x="38" y="276" width="2" height="2" fill="#58f0a8"/>
+<rect x="40" y="276" width="2" height="2" fill="#58f0a8"/>
+<rect x="42" y="276" width="2" height="2" fill="#58f0a8"/>
+<rect x="44" y="276" width="2" height="2" fill="#126b47"/>
+<rect x="46" y="276" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="278" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="278" width="2" height="2" fill="#126b47"/>
+<rect x="36" y="278" width="2" height="2" fill="#58f0a8"/>
+<rect x="38" y="278" width="2" height="2" fill="#58f0a8"/>
+<rect x="40" y="278" width="2" height="2" fill="#58f0a8"/>
+<rect x="42" y="278" width="2" height="2" fill="#58f0a8"/>
+<rect x="44" y="278" width="2" height="2" fill="#126b47"/>
+<rect x="46" y="278" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="280" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="280" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="280" width="2" height="2" fill="#126b47"/>
+<rect x="38" y="280" width="2" height="2" fill="#126b47"/>
+<rect x="40" y="280" width="2" height="2" fill="#126b47"/>
+<rect x="42" y="280" width="2" height="2" fill="#126b47"/>
+<rect x="44" y="280" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="280" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="284" width="2" height="2" fill="#063a26"/>
+</g>
+<text x="56" y="282" font-size="13" fill="#e6edf3" letter-spacing="2">EDUCATION</text>
+
+      <text x="32" y="302" font-size="12" fill="#9aa7b4">UTN FR Cordoba - Ing. en Sistemas de Informacion</text>
+      <text x="32" y="318" font-size="11" fill="#5b6a77">2019 - 2024</text>
+
+      <line x1="620" y1="272" x2="620" y2="312" stroke="#22313c"/>
+
+<g shape-rendering="crispEdges">
+<rect x="640" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="642" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="644" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="646" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="648" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="650" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="652" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="654" y="270" width="2" height="2" fill="#063a26"/>
+<rect x="640" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="642" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="644" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="646" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="648" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="650" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="652" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="654" y="272" width="2" height="2" fill="#063a26"/>
+<rect x="640" y="274" width="2" height="2" fill="#063a26"/>
+<rect x="642" y="274" width="2" height="2" fill="#063a26"/>
+<rect x="644" y="274" width="2" height="2" fill="#126b47"/>
+<rect x="646" y="274" width="2" height="2" fill="#126b47"/>
+<rect x="648" y="274" width="2" height="2" fill="#126b47"/>
+<rect x="650" y="274" width="2" height="2" fill="#126b47"/>
+<rect x="652" y="274" width="2" height="2" fill="#063a26"/>
+<rect x="654" y="274" width="2" height="2" fill="#063a26"/>
+<rect x="640" y="276" width="2" height="2" fill="#063a26"/>
+<rect x="642" y="276" width="2" height="2" fill="#126b47"/>
+<rect x="644" y="276" width="2" height="2" fill="#58f0a8"/>
+<rect x="646" y="276" width="2" height="2" fill="#58f0a8"/>
+<rect x="648" y="276" width="2" height="2" fill="#58f0a8"/>
+<rect x="650" y="276" width="2" height="2" fill="#58f0a8"/>
+<rect x="652" y="276" width="2" height="2" fill="#126b47"/>
+<rect x="654" y="276" width="2" height="2" fill="#063a26"/>
+<rect x="640" y="278" width="2" height="2" fill="#063a26"/>
+<rect x="642" y="278" width="2" height="2" fill="#126b47"/>
+<rect x="644" y="278" width="2" height="2" fill="#58f0a8"/>
+<rect x="646" y="278" width="2" height="2" fill="#58f0a8"/>
+<rect x="648" y="278" width="2" height="2" fill="#58f0a8"/>
+<rect x="650" y="278" width="2" height="2" fill="#58f0a8"/>
+<rect x="652" y="278" width="2" height="2" fill="#126b47"/>
+<rect x="654" y="278" width="2" height="2" fill="#063a26"/>
+<rect x="640" y="280" width="2" height="2" fill="#063a26"/>
+<rect x="642" y="280" width="2" height="2" fill="#063a26"/>
+<rect x="644" y="280" width="2" height="2" fill="#126b47"/>
+<rect x="646" y="280" width="2" height="2" fill="#126b47"/>
+<rect x="648" y="280" width="2" height="2" fill="#126b47"/>
+<rect x="650" y="280" width="2" height="2" fill="#126b47"/>
+<rect x="652" y="280" width="2" height="2" fill="#063a26"/>
+<rect x="654" y="280" width="2" height="2" fill="#063a26"/>
+<rect x="640" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="642" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="644" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="646" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="648" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="650" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="652" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="654" y="282" width="2" height="2" fill="#063a26"/>
+<rect x="640" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="642" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="644" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="646" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="648" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="650" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="652" y="284" width="2" height="2" fill="#063a26"/>
+<rect x="654" y="284" width="2" height="2" fill="#063a26"/>
+</g>
+<text x="664" y="282" font-size="13" fill="#e6edf3" letter-spacing="2">AWARDS</text>
+
+      <text x="640" y="302" font-size="12" fill="#9aa7b4">Premio "Ing. Isidoro Marin" / 2025</text>
+      <text x="640" y="318" font-size="11" fill="#5b6a77">1er escolta bandera / prom. 9.51 / tesis 10/10</text>
+    </g>
+    <rect width="960" height="340" fill="url(#vig3)"/>
+    <rect width="960" height="340" fill="url(#glass3)"/>
+    <rect width="960" height="340" fill="url(#scan3)" opacity="0.16"/>
+    <rect x="0.5" y="0.5" width="959" height="339" rx="10" fill="none" stroke="#22313c" stroke-width="1"/>
   </g>
-  <rect x="0.5" y="0.5" width="959" height="339" rx="10" fill="none" stroke="#262626" stroke-width="1"/>
 </svg>

@@ -20,5 +20,4 @@
 
 - **Email:** [lunamaximiliano.sistemas@gmail.com](mailto:lunamaximiliano.sistemas@gmail.com)
 - **LinkedIn:** [in/luna-maximiliano](https://www.linkedin.com/in/luna-maximiliano)
-- **GitHub:** [maxiluna45](https://github.com/maxiluna45)
 - **Base:** Córdoba, Argentina

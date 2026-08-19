@@ -1,128 +1,297 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300"
-     font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+<svg width="960" height="300" viewBox="0 0 960 300" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <pattern id="scan2" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="4" fill="#0d0d0d"/>
-      <rect width="4" height="1" fill="#000000" opacity="0.14"/>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1116"/>
+      <stop offset="1" stop-color="#05080b"/>
+    </linearGradient>
+    <linearGradient id="roll2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ff5c7" stop-opacity="0"/>
+      <stop offset="0.42" stop-color="#9ff5c7" stop-opacity="0.03"/>
+      <stop offset="0.5" stop-color="#9ff5c7" stop-opacity="0.07"/>
+      <stop offset="0.58" stop-color="#9ff5c7" stop-opacity="0.03"/>
+      <stop offset="1" stop-color="#9ff5c7" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vig2" cx="50%" cy="42%" r="75%">
+      <stop offset="58%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.48"/>
+    </radialGradient>
+    <linearGradient id="glass2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="28%" stop-color="#ffffff" stop-opacity="0.018"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="scan2" width="4" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0.5" x2="4" y2="0.5" stroke="#000000" stroke-opacity="0.22" stroke-width="1"/>
     </pattern>
     <clipPath id="pc"><rect x="0" y="0" width="960" height="300" rx="10"/></clipPath>
     <clipPath id="waveClip"><rect x="742" y="72" width="186" height="80"/></clipPath>
   </defs>
-
-  <rect x="0" y="0" width="960" height="300" rx="10" fill="#0d0d0d"/>
-
-  <!-- CELL A : STACK -->
-  <rect x="16" y="16" width="478" height="268" rx="8" fill="#141414" stroke="#262626"/>
-  <rect x="32" y="36" width="7" height="7" fill="#e6e6e6"/>
-  <text x="46" y="44" font-size="13" fill="#e6e6e6" letter-spacing="2">STACK.SYS</text>
-  <line x1="32" y1="56" x2="478" y2="56" stroke="#262626"/>
-
-  <rect x="32" y="70" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="101" y="87" font-size="12" fill="#e6e6e6" text-anchor="middle">JAVASCRIPT</text>
-  <rect x="182" y="70" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="251" y="87" font-size="12" fill="#e6e6e6" text-anchor="middle">TYPESCRIPT</text>
-  <rect x="332" y="70" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="401" y="87" font-size="12" fill="#e6e6e6" text-anchor="middle">PYTHON</text>
-
-  <rect x="32" y="106" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="101" y="123" font-size="12" fill="#e6e6e6" text-anchor="middle">VUE / NUXT</text>
-  <rect x="182" y="106" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="251" y="123" font-size="12" fill="#e6e6e6" text-anchor="middle">REACT</text>
-  <rect x="332" y="106" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="401" y="123" font-size="12" fill="#e6e6e6" text-anchor="middle">NEST.JS</text>
-
-  <rect x="32" y="142" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="101" y="159" font-size="12" fill="#e6e6e6" text-anchor="middle">DJANGO</text>
-  <rect x="182" y="142" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="251" y="159" font-size="12" fill="#e6e6e6" text-anchor="middle">FASTAPI</text>
-  <rect x="332" y="142" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="401" y="159" font-size="12" fill="#e6e6e6" text-anchor="middle">C# .NET</text>
-
-  <rect x="32" y="178" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="101" y="195" font-size="12" fill="#e6e6e6" text-anchor="middle">DOCKER</text>
-  <rect x="182" y="178" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="251" y="195" font-size="12" fill="#e6e6e6" text-anchor="middle">CI/CD</text>
-  <rect x="332" y="178" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="401" y="195" font-size="12" fill="#e6e6e6" text-anchor="middle">AZURE</text>
-
-  <rect x="32" y="214" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="101" y="231" font-size="12" fill="#e6e6e6" text-anchor="middle">POSTGRES</text>
-  <rect x="182" y="214" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="251" y="231" font-size="12" fill="#e6e6e6" text-anchor="middle">REDIS</text>
-  <rect x="332" y="214" width="138" height="26" rx="5" fill="#0d0d0d" stroke="#262626"/><text x="401" y="231" font-size="12" fill="#e6e6e6" text-anchor="middle">ELASTIC</text>
-
-  <text x="32" y="262" font-size="11" fill="#555555">15 MODULES LOADED</text>
-  <rect x="150" y="252" width="7" height="12" fill="#e6e6e6">
-    <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- CELL B : CHRONO -->
-  <rect x="510" y="16" width="200" height="268" rx="8" fill="#141414" stroke="#262626"/>
-  <rect x="526" y="36" width="7" height="7" fill="#e6e6e6"/>
-  <text x="540" y="44" font-size="13" fill="#e6e6e6" letter-spacing="2">CHRONO.DAT</text>
-  <line x1="526" y1="56" x2="694" y2="56" stroke="#262626"/>
-
-  <circle cx="610" cy="130" r="55" fill="none" stroke="#3a3a3a" stroke-width="2"/>
-  <line x1="610" y1="75" x2="610" y2="81" stroke="#555555" stroke-width="2"/>
-  <line x1="665" y1="130" x2="659" y2="130" stroke="#555555" stroke-width="2"/>
-  <line x1="610" y1="185" x2="610" y2="179" stroke="#555555" stroke-width="2"/>
-  <line x1="555" y1="130" x2="561" y2="130" stroke="#555555" stroke-width="2"/>
-  <line x1="637.5" y1="82.4" x2="634.5" y2="87.6" stroke="#3a3a3a" stroke-width="1.5"/>
-  <line x1="657.6" y1="102.5" x2="652.4" y2="105.4" stroke="#3a3a3a" stroke-width="1.5"/>
-  <line x1="657.6" y1="157.5" x2="652.4" y2="154.6" stroke="#3a3a3a" stroke-width="1.5"/>
-  <line x1="637.5" y1="177.6" x2="634.5" y2="172.4" stroke="#3a3a3a" stroke-width="1.5"/>
-  <line x1="582.5" y1="177.6" x2="585.5" y2="172.4" stroke="#3a3a3a" stroke-width="1.5"/>
-  <line x1="562.4" y1="157.5" x2="567.6" y2="154.6" stroke="#3a3a3a" stroke-width="1.5"/>
-  <line x1="562.4" y1="102.5" x2="567.6" y2="105.4" stroke="#3a3a3a" stroke-width="1.5"/>
-  <line x1="582.5" y1="82.4" x2="585.5" y2="87.6" stroke="#3a3a3a" stroke-width="1.5"/>
-
-  <line x1="610" y1="130" x2="610" y2="104" stroke="#e6e6e6" stroke-width="4" stroke-linecap="round" transform="rotate(300 610 130)"/>
-  <line x1="610" y1="130" x2="610" y2="92" stroke="#e6e6e6" stroke-width="3" stroke-linecap="round" transform="rotate(48 610 130)"/>
-  <line x1="610" y1="130" x2="610" y2="86" stroke="#8a8a8a" stroke-width="1.5">
-    <animateTransform attributeName="transform" type="rotate" from="0 610 130" to="360 610 130" dur="60s" repeatCount="indefinite"/>
-  </line>
-  <circle cx="610" cy="130" r="4" fill="#e6e6e6"/>
-
-  <text x="610" y="222" font-size="22" text-anchor="middle" fill="#e6e6e6">
-    <tspan>10</tspan><tspan>:<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></tspan><tspan>08</tspan><tspan>:<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></tspan><tspan>32</tspan>
-  </text>
-  <text x="610" y="248" font-size="12" text-anchor="middle" fill="#8a8a8a">TUE · 2026 · UTC-3</text>
-
-  <!-- CELL C : OSC -->
-  <rect x="726" y="16" width="218" height="268" rx="8" fill="#141414" stroke="#262626"/>
-  <rect x="742" y="36" width="7" height="7" fill="#e6e6e6"/>
-  <text x="756" y="44" font-size="13" fill="#e6e6e6" letter-spacing="2">OSC.SYS</text>
-  <line x1="742" y1="56" x2="928" y2="56" stroke="#262626"/>
-
-  <circle cx="752" cy="70" r="3" fill="#e6e6e6">
-    <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/>
-  </circle>
-  <text x="762" y="74" font-size="11" fill="#8a8a8a">SIGNAL: OK</text>
-
-  <g clip-path="url(#waveClip)">
-    <g>
-      <path d="M 726 112 Q 741 88 756 112 T 786 112 T 816 112 T 846 112 T 876 112 T 906 112 T 936 112 T 966 112 T 996 112" fill="none" stroke="#e6e6e6" stroke-width="2"/>
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="-60 0" dur="1.6s" repeatCount="indefinite"/>
-    </g>
-  </g>
-  <line x1="742" y1="112" x2="928" y2="112" stroke="#262626" stroke-width="1" stroke-dasharray="4 4"/>
-
-  <text x="742" y="176" font-size="11" fill="#555555" letter-spacing="1">THROUGHPUT</text>
-  <rect x="750" y="238" width="18" height="20" fill="#3a3a3a">
-    <animate attributeName="height" values="20;60;30;55;20" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="y" values="238;198;228;203;238" dur="3s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="778" y="228" width="18" height="30" fill="#4a4a4a">
-    <animate attributeName="height" values="30;48;62;26;30" dur="3.4s" repeatCount="indefinite"/>
-    <animate attributeName="y" values="228;210;196;232;228" dur="3.4s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="806" y="244" width="18" height="14" fill="#3a3a3a">
-    <animate attributeName="height" values="14;52;24;44;14" dur="2.8s" repeatCount="indefinite"/>
-    <animate attributeName="y" values="244;206;234;214;244" dur="2.8s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="834" y="220" width="18" height="38" fill="#555555">
-    <animate attributeName="height" values="38;18;58;30;38" dur="3.2s" repeatCount="indefinite"/>
-    <animate attributeName="y" values="220;240;200;228;220" dur="3.2s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="862" y="234" width="18" height="24" fill="#4a4a4a">
-    <animate attributeName="height" values="24;56;34;20;24" dur="3.6s" repeatCount="indefinite"/>
-    <animate attributeName="y" values="234;202;224;238;234" dur="3.6s" repeatCount="indefinite"/>
-  </rect>
-  <line x1="744" y1="258" x2="928" y2="258" stroke="#262626"/>
-  <text x="928" y="276" font-size="11" text-anchor="end" fill="#8a8a8a">62.4k req/s</text>
-
-  <!-- scan overlay + CRT roll -->
-  <rect x="0" y="0" width="960" height="300" rx="10" fill="url(#scan2)"/>
+  <rect width="960" height="300" rx="10" fill="url(#bg2)"/>
   <g clip-path="url(#pc)">
-    <rect x="0" y="0" width="960" height="60" fill="#ffffff" opacity="0.03">
-      <animateTransform attributeName="transform" type="translate" from="0 -60" to="0 300" dur="6s" repeatCount="indefinite"/>
+    <rect x="0" y="-300" width="960" height="300" fill="url(#roll2)">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="0 600" dur="9s" repeatCount="indefinite"/>
     </rect>
+    <g font-family="Consolas, 'Courier New', monospace">
+<rect x="16" y="16" width="478" height="268" rx="8" fill="#0d151c" stroke="#22313c"/>
+<rect x="16" y="16" width="478" height="40" rx="8" fill="#0f1a22"/>
+<rect x="16" y="36" width="478" height="20" fill="#0f1a22"/>
+<line x1="16" y1="56" x2="494" y2="56" stroke="#22313c"/>
+<g shape-rendering="crispEdges">
+<rect x="32" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="32" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="32" width="2" height="2" fill="#126b47"/>
+<rect x="36" y="32" width="2" height="2" fill="#126b47"/>
+<rect x="38" y="32" width="2" height="2" fill="#126b47"/>
+<rect x="40" y="32" width="2" height="2" fill="#126b47"/>
+<rect x="42" y="32" width="2" height="2" fill="#126b47"/>
+<rect x="44" y="32" width="2" height="2" fill="#126b47"/>
+<rect x="46" y="32" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="34" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="34" width="2" height="2" fill="#126b47"/>
+<rect x="36" y="34" width="2" height="2" fill="#58f0a8"/>
+<rect x="38" y="34" width="2" height="2" fill="#58f0a8"/>
+<rect x="40" y="34" width="2" height="2" fill="#58f0a8"/>
+<rect x="42" y="34" width="2" height="2" fill="#58f0a8"/>
+<rect x="44" y="34" width="2" height="2" fill="#58f0a8"/>
+<rect x="46" y="34" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="36" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="36" width="2" height="2" fill="#126b47"/>
+<rect x="36" y="36" width="2" height="2" fill="#58f0a8"/>
+<rect x="38" y="36" width="2" height="2" fill="#58f0a8"/>
+<rect x="40" y="36" width="2" height="2" fill="#58f0a8"/>
+<rect x="42" y="36" width="2" height="2" fill="#58f0a8"/>
+<rect x="44" y="36" width="2" height="2" fill="#58f0a8"/>
+<rect x="46" y="36" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="38" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="38" width="2" height="2" fill="#126b47"/>
+<rect x="36" y="38" width="2" height="2" fill="#126b47"/>
+<rect x="38" y="38" width="2" height="2" fill="#126b47"/>
+<rect x="40" y="38" width="2" height="2" fill="#126b47"/>
+<rect x="42" y="38" width="2" height="2" fill="#126b47"/>
+<rect x="44" y="38" width="2" height="2" fill="#126b47"/>
+<rect x="46" y="38" width="2" height="2" fill="#063a26"/>
+<rect x="32" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="34" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="36" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="38" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="40" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="42" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="44" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="46" y="40" width="2" height="2" fill="#063a26"/>
+</g>
+<text x="56" y="43" font-size="13" fill="#e6edf3" letter-spacing="2">STACK</text>
+
+<rect x="32" y="70" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="101" y="87" text-anchor="middle" font-size="11" fill="#e6edf3">JAVASCRIPT</text>
+<rect x="184" y="70" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="253" y="87" text-anchor="middle" font-size="11" fill="#e6edf3">TYPESCRIPT</text>
+<rect x="336" y="70" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="405" y="87" text-anchor="middle" font-size="11" fill="#e6edf3">PYTHON</text>
+<rect x="32" y="106" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="101" y="123" text-anchor="middle" font-size="11" fill="#e6edf3">VUE / NUXT</text>
+<rect x="184" y="106" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="253" y="123" text-anchor="middle" font-size="11" fill="#e6edf3">NODE / API</text>
+<rect x="336" y="106" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="405" y="123" text-anchor="middle" font-size="11" fill="#e6edf3">REACT</text>
+<rect x="32" y="142" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="101" y="159" text-anchor="middle" font-size="11" fill="#e6edf3">POSTGRESQL</text>
+<rect x="184" y="142" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="253" y="159" text-anchor="middle" font-size="11" fill="#e6edf3">MONGODB</text>
+<rect x="336" y="142" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="405" y="159" text-anchor="middle" font-size="11" fill="#e6edf3">REDIS</text>
+<rect x="32" y="178" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="101" y="195" text-anchor="middle" font-size="11" fill="#e6edf3">DOCKER</text>
+<rect x="184" y="178" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="253" y="195" text-anchor="middle" font-size="11" fill="#e6edf3">KUBERNETES</text>
+<rect x="336" y="178" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="405" y="195" text-anchor="middle" font-size="11" fill="#e6edf3">AWS / CLOUD</text>
+<rect x="32" y="214" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="101" y="231" text-anchor="middle" font-size="11" fill="#e6edf3">LINUX</text>
+<rect x="184" y="214" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="253" y="231" text-anchor="middle" font-size="11" fill="#e6edf3">CI/CD</text>
+<rect x="336" y="214" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
+<text x="405" y="231" text-anchor="middle" font-size="11" fill="#e6edf3">GIT</text>
+<text x="32" y="268" font-size="11" fill="#5b6a77">15 MODULES LOADED</text>
+<rect x="152" y="258" width="7" height="12" fill="#58f0a8"><animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/></rect>
+
+<rect x="510" y="16" width="200" height="268" rx="8" fill="#0d151c" stroke="#22313c"/>
+<rect x="510" y="16" width="200" height="40" rx="8" fill="#0f1a22"/>
+<rect x="510" y="36" width="200" height="20" fill="#0f1a22"/>
+<line x1="510" y1="56" x2="710" y2="56" stroke="#22313c"/>
+<g shape-rendering="crispEdges">
+<rect x="526" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="528" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="530" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="532" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="534" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="536" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="538" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="540" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="526" y="32" width="2" height="2" fill="#063a26"/>
+<rect x="528" y="32" width="2" height="2" fill="#126b47"/>
+<rect x="530" y="32" width="2" height="2" fill="#58f0a8"/>
+<rect x="532" y="32" width="2" height="2" fill="#58f0a8"/>
+<rect x="534" y="32" width="2" height="2" fill="#58f0a8"/>
+<rect x="536" y="32" width="2" height="2" fill="#58f0a8"/>
+<rect x="538" y="32" width="2" height="2" fill="#58f0a8"/>
+<rect x="540" y="32" width="2" height="2" fill="#063a26"/>
+<rect x="526" y="34" width="2" height="2" fill="#063a26"/>
+<rect x="528" y="34" width="2" height="2" fill="#126b47"/>
+<rect x="530" y="34" width="2" height="2" fill="#58f0a8"/>
+<rect x="532" y="34" width="2" height="2" fill="#58f0a8"/>
+<rect x="534" y="34" width="2" height="2" fill="#126b47"/>
+<rect x="536" y="34" width="2" height="2" fill="#126b47"/>
+<rect x="538" y="34" width="2" height="2" fill="#58f0a8"/>
+<rect x="540" y="34" width="2" height="2" fill="#063a26"/>
+<rect x="526" y="36" width="2" height="2" fill="#063a26"/>
+<rect x="528" y="36" width="2" height="2" fill="#126b47"/>
+<rect x="530" y="36" width="2" height="2" fill="#58f0a8"/>
+<rect x="532" y="36" width="2" height="2" fill="#58f0a8"/>
+<rect x="534" y="36" width="2" height="2" fill="#126b47"/>
+<rect x="536" y="36" width="2" height="2" fill="#126b47"/>
+<rect x="538" y="36" width="2" height="2" fill="#58f0a8"/>
+<rect x="540" y="36" width="2" height="2" fill="#063a26"/>
+<rect x="526" y="38" width="2" height="2" fill="#063a26"/>
+<rect x="528" y="38" width="2" height="2" fill="#126b47"/>
+<rect x="530" y="38" width="2" height="2" fill="#58f0a8"/>
+<rect x="532" y="38" width="2" height="2" fill="#58f0a8"/>
+<rect x="534" y="38" width="2" height="2" fill="#58f0a8"/>
+<rect x="536" y="38" width="2" height="2" fill="#58f0a8"/>
+<rect x="538" y="38" width="2" height="2" fill="#58f0a8"/>
+<rect x="540" y="38" width="2" height="2" fill="#063a26"/>
+<rect x="526" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="528" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="530" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="532" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="534" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="536" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="538" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="540" y="40" width="2" height="2" fill="#063a26"/>
+</g>
+<text x="550" y="43" font-size="13" fill="#e6edf3" letter-spacing="2">CHRONO</text>
+
+<circle cx="610" cy="130" r="55" fill="#0a1116" stroke="#22313c" stroke-width="2"/>
+<circle cx="610" cy="130" r="48" fill="none" stroke="#1f2a35"/>
+<line x1="610" y1="82" x2="610" y2="90" stroke="#3a4a55"/>
+<line x1="610" y1="170" x2="610" y2="178" stroke="#3a4a55"/>
+<line x1="562" y1="130" x2="570" y2="130" stroke="#3a4a55"/>
+<line x1="650" y1="130" x2="658" y2="130" stroke="#3a4a55"/>
+<line x1="610" y1="78" x2="610" y2="94" stroke="#5b6a77"/>
+<line x1="610" y1="166" x2="610" y2="182" stroke="#5b6a77"/>
+<line x1="558" y1="130" x2="574" y2="130" stroke="#5b6a77"/>
+<line x1="646" y1="130" x2="662" y2="130" stroke="#5b6a77"/>
+<line x1="610" y1="130" x2="610" y2="100" stroke="#e6edf3" stroke-width="4" stroke-linecap="round">
+  <animateTransform attributeName="transform" type="rotate" from="0 610 130" to="360 610 130" dur="43200s" repeatCount="indefinite"/>
+</line>
+<line x1="610" y1="130" x2="610" y2="88" stroke="#e6edf3" stroke-width="3" stroke-linecap="round">
+  <animateTransform attributeName="transform" type="rotate" from="0 610 130" to="360 610 130" dur="3600s" repeatCount="indefinite"/>
+</line>
+<line x1="610" y1="130" x2="610" y2="82" stroke="#58f0a8" stroke-width="1.5" stroke-linecap="round">
+  <animateTransform attributeName="transform" type="rotate" from="0 610 130" to="360 610 130" dur="60s" repeatCount="indefinite"/>
+</line>
+<circle cx="610" cy="130" r="4" fill="#58f0a8"/>
+<text x="610" y="222" text-anchor="middle" font-size="16" fill="#e6edf3">10<tspan fill="#58f0a8">:</tspan>08<tspan fill="#58f0a8">:</tspan>32</text>
+<text x="610" y="248" text-anchor="middle" font-size="12" fill="#5b6a77">SAT 2026.08.19</text>
+
+<rect x="726" y="16" width="218" height="268" rx="8" fill="#0d151c" stroke="#22313c"/>
+<rect x="726" y="16" width="218" height="40" rx="8" fill="#0f1a22"/>
+<rect x="726" y="36" width="218" height="20" fill="#0f1a22"/>
+<line x1="726" y1="56" x2="944" y2="56" stroke="#22313c"/>
+<g shape-rendering="crispEdges">
+<rect x="742" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="744" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="746" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="748" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="750" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="752" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="754" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="756" y="30" width="2" height="2" fill="#063a26"/>
+<rect x="742" y="32" width="2" height="2" fill="#063a26"/>
+<rect x="744" y="32" width="2" height="2" fill="#063a26"/>
+<rect x="746" y="32" width="2" height="2" fill="#063a26"/>
+<rect x="748" y="32" width="2" height="2" fill="#063a26"/>
+<rect x="750" y="32" width="2" height="2" fill="#063a26"/>
+<rect x="752" y="32" width="2" height="2" fill="#063a26"/>
+<rect x="754" y="32" width="2" height="2" fill="#063a26"/>
+<rect x="756" y="32" width="2" height="2" fill="#063a26"/>
+<rect x="742" y="34" width="2" height="2" fill="#063a26"/>
+<rect x="744" y="34" width="2" height="2" fill="#063a26"/>
+<rect x="746" y="34" width="2" height="2" fill="#063a26"/>
+<rect x="748" y="34" width="2" height="2" fill="#063a26"/>
+<rect x="750" y="34" width="2" height="2" fill="#063a26"/>
+<rect x="752" y="34" width="2" height="2" fill="#063a26"/>
+<rect x="754" y="34" width="2" height="2" fill="#063a26"/>
+<rect x="756" y="34" width="2" height="2" fill="#063a26"/>
+<rect x="742" y="36" width="2" height="2" fill="#063a26"/>
+<rect x="744" y="36" width="2" height="2" fill="#126b47"/>
+<rect x="746" y="36" width="2" height="2" fill="#2bbf7d"/>
+<rect x="748" y="36" width="2" height="2" fill="#58f0a8"/>
+<rect x="750" y="36" width="2" height="2" fill="#2bbf7d"/>
+<rect x="752" y="36" width="2" height="2" fill="#126b47"/>
+<rect x="754" y="36" width="2" height="2" fill="#063a26"/>
+<rect x="756" y="36" width="2" height="2" fill="#063a26"/>
+<rect x="742" y="38" width="2" height="2" fill="#063a26"/>
+<rect x="744" y="38" width="2" height="2" fill="#126b47"/>
+<rect x="746" y="38" width="2" height="2" fill="#2bbf7d"/>
+<rect x="748" y="38" width="2" height="2" fill="#58f0a8"/>
+<rect x="750" y="38" width="2" height="2" fill="#2bbf7d"/>
+<rect x="752" y="38" width="2" height="2" fill="#126b47"/>
+<rect x="754" y="38" width="2" height="2" fill="#063a26"/>
+<rect x="756" y="38" width="2" height="2" fill="#063a26"/>
+<rect x="742" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="744" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="746" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="748" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="750" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="752" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="754" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="756" y="40" width="2" height="2" fill="#063a26"/>
+<rect x="742" y="42" width="2" height="2" fill="#063a26"/>
+<rect x="744" y="42" width="2" height="2" fill="#063a26"/>
+<rect x="746" y="42" width="2" height="2" fill="#063a26"/>
+<rect x="748" y="42" width="2" height="2" fill="#063a26"/>
+<rect x="750" y="42" width="2" height="2" fill="#063a26"/>
+<rect x="752" y="42" width="2" height="2" fill="#063a26"/>
+<rect x="754" y="42" width="2" height="2" fill="#063a26"/>
+<rect x="756" y="42" width="2" height="2" fill="#063a26"/>
+<rect x="742" y="44" width="2" height="2" fill="#063a26"/>
+<rect x="744" y="44" width="2" height="2" fill="#063a26"/>
+<rect x="746" y="44" width="2" height="2" fill="#063a26"/>
+<rect x="748" y="44" width="2" height="2" fill="#063a26"/>
+<rect x="750" y="44" width="2" height="2" fill="#063a26"/>
+<rect x="752" y="44" width="2" height="2" fill="#063a26"/>
+<rect x="754" y="44" width="2" height="2" fill="#063a26"/>
+<rect x="756" y="44" width="2" height="2" fill="#063a26"/>
+</g>
+<text x="766" y="43" font-size="13" fill="#e6edf3" letter-spacing="2">WAVEFORM</text>
+
+<text x="742" y="74" font-size="11" fill="#5b6a77">SIGNAL: <tspan fill="#e6edf3">STABLE</tspan></text>
+<circle cx="922" cy="70" r="4" fill="#58f0a8"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+<line x1="742" y1="112" x2="928" y2="112" stroke="#22313c" stroke-dasharray="4 4"/>
+<g clip-path="url(#waveClip)">
+  <path d="M726,112 Q736,92 746,112 T766,112 T786,112 T806,112 T826,112 T846,112 T866,112 T886,112 T906,112 T926,112 T946,112 T966,112 T986,112 T1006,112" stroke="#58f0a8" stroke-width="2" fill="none">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-60 0" dur="2.5s" repeatCount="indefinite"/>
+  </path>
+</g>
+<rect x="742" y="238" width="18" height="20" fill="#126b47"><animate attributeName="y" values="238;198;228;203;238" dur="2.8s" repeatCount="indefinite"/><animate attributeName="height" values="20;60;30;55;20" dur="2.8s" repeatCount="indefinite"/></rect>
+<rect x="770" y="238" width="18" height="20" fill="#126b47"><animate attributeName="y" values="238;201;226;205;238" dur="2.9499999999999997s" repeatCount="indefinite"/><animate attributeName="height" values="20;57;32;53;20" dur="2.9499999999999997s" repeatCount="indefinite"/></rect>
+<rect x="798" y="238" width="18" height="20" fill="#126b47"><animate attributeName="y" values="238;204;224;207;238" dur="3.0999999999999996s" repeatCount="indefinite"/><animate attributeName="height" values="20;54;34;51;20" dur="3.0999999999999996s" repeatCount="indefinite"/></rect>
+<rect x="826" y="238" width="18" height="20" fill="#126b47"><animate attributeName="y" values="238;207;222;209;238" dur="3.25s" repeatCount="indefinite"/><animate attributeName="height" values="20;51;36;49;20" dur="3.25s" repeatCount="indefinite"/></rect>
+<rect x="854" y="238" width="18" height="20" fill="#126b47"><animate attributeName="y" values="238;210;220;211;238" dur="3.4s" repeatCount="indefinite"/><animate attributeName="height" values="20;48;38;47;20" dur="3.4s" repeatCount="indefinite"/></rect>
+<rect x="882" y="238" width="18" height="20" fill="#126b47"><animate attributeName="y" values="238;213;218;213;238" dur="3.55s" repeatCount="indefinite"/><animate attributeName="height" values="20;45;40;45;20" dur="3.55s" repeatCount="indefinite"/></rect>
+<rect x="910" y="238" width="18" height="20" fill="#126b47"><animate attributeName="y" values="238;216;216;215;238" dur="3.6999999999999997s" repeatCount="indefinite"/><animate attributeName="height" values="20;42;42;43;20" dur="3.6999999999999997s" repeatCount="indefinite"/></rect>
+<line x1="742" y1="258" x2="928" y2="258" stroke="#22313c"/>
+<text x="835" y="278" text-anchor="middle" font-size="11" fill="#9aa7b4">62.4k req/s</text>
+    </g>
+    <rect width="960" height="300" fill="url(#vig2)"/>
+    <rect width="960" height="300" fill="url(#glass2)"/>
+    <rect width="960" height="300" fill="url(#scan2)" opacity="0.16"/>
   </g>
-  <rect x="0.5" y="0.5" width="959" height="299" rx="10" fill="none" stroke="#262626" stroke-width="1"/>
 </svg>
