@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300"
+     font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+  <defs>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="#0d0d0d"/>
+      <rect width="4" height="1" fill="#000000" opacity="0.28"/>
+    </pattern>
+    <clipPath id="hc"><rect x="0" y="0" width="960" height="300" rx="10"/></clipPath>
+  </defs>
+
+  <!-- base -->
+  <rect x="0" y="0" width="960" height="300" rx="10" fill="#0d0d0d"/>
+  <rect x="0" y="0" width="960" height="300" rx="10" fill="url(#scan)"/>
+  <rect x="0.5" y="0.5" width="959" height="299" rx="10" fill="none" stroke="#262626" stroke-width="1"/>
+
+  <!-- CRT scan roll -->
+  <g clip-path="url(#hc)">
+    <rect x="0" y="0" width="960" height="60" fill="#ffffff" opacity="0.035">
+      <animateTransform attributeName="transform" type="translate" from="0 -60" to="0 300" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- top status bar -->
+  <circle cx="24" cy="18" r="5" fill="#333333"/>
+  <circle cx="42" cy="18" r="5" fill="#333333"/>
+  <circle cx="60" cy="18" r="5" fill="#4a4a4a"/>
+  <text x="82" y="22" font-size="12" fill="#8a8a8a">maxiluna@dev: ~</text>
+  <line x1="0" y1="34" x2="960" y2="34" stroke="#262626" stroke-width="1"/>
+  <text x="936" y="22" font-size="12" text-anchor="end">
+    <tspan fill="#555555">SYS v1.0</tspan>
+    <tspan fill="#333333">   |   </tspan>
+    <tspan fill="#e6e6e6">MODE: DARK</tspan>
+    <tspan fill="#333333">   |   </tspan>
+    <tspan fill="#8a8a8a">LIVE</tspan>
+  </text>
+  <circle cx="884" cy="18" r="4" fill="#e6e6e6">
+    <animate attributeName="opacity" values="1;0.15;1" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- LEFT: identity -->
+  <text x="40" y="70" font-size="13" fill="#555555" letter-spacing="3">// OPERATOR PROFILE</text>
+  <text x="38" y="118" font-size="42" font-weight="bold" fill="#ffffff" letter-spacing="1">MAXIMILIANO LUNA</text>
+  <text x="40" y="148" font-size="15" fill="#8a8a8a" letter-spacing="1">DEVELOPER AUTOMATION ENGINEER // FULL-STACK</text>
+  <rect x="40" y="162" width="520" height="2" fill="#262626"/>
+  <rect x="40" y="162" width="120" height="2" fill="#e6e6e6">
+    <animate attributeName="width" values="120;520;120" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- terminal line -->
+  <text x="40" y="200" font-size="15">
+    <tspan fill="#8a8a8a">maxiluna@dev:~$ </tspan><tspan fill="#e6e6e6">whoami</tspan>
+  </text>
+  <text x="40" y="226" font-size="15" fill="#ffffff">maximiliano.luna</text>
+  <rect x="150" y="213" width="9" height="17" fill="#e6e6e6">
+    <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <circle cx="45" cy="256" r="4" fill="#e6e6e6">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <text x="58" y="261" font-size="14" fill="#8a8a8a">STATUS: <tspan fill="#e6e6e6">OPEN TO WORK</tspan></text>
+
+  <!-- RIGHT: terminal avatar box -->
+  <rect x="648" y="62" width="150" height="150" rx="8" fill="#141414" stroke="#262626" stroke-width="1"/>
+  <text x="660" y="82" font-size="11" fill="#555555" letter-spacing="2">TTY0</text>
+  <line x1="648" y1="92" x2="798" y2="92" stroke="#262626" stroke-width="1"/>
+  <polygon points="688,118 724,148 688,178 688,162 708,148 688,134" fill="#e6e6e6"/>
+  <rect x="688" y="186" width="38" height="8" fill="#e6e6e6">
+    <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- right info lines -->
+  <text x="648" y="238" font-size="13" fill="#8a8a8a">LOC: <tspan fill="#e6e6e6">CORDOBA, AR</tspan></text>
+  <text x="648" y="262" font-size="13" fill="#8a8a8a">ROLE: <tspan fill="#e6e6e6">DEVOPS + FULLSTACK</tspan></text>
+</svg>
