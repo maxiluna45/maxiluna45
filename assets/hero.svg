@@ -45,7 +45,7 @@
       <rect x="40" y="162" width="120" height="2" fill="#58f0a8"><animate attributeName="width" values="120;520;120" dur="4s" repeatCount="indefinite"/></rect>
       <text x="40" y="200" font-size="15"><tspan fill="#9aa7b4">maxiluna@dev:~$ </tspan><tspan fill="#e6edf3">whoami</tspan></text>
       <text x="40" y="226" font-size="15" fill="#e6edf3">maximiliano.luna</text>
-      <rect x="192" y="213" width="9" height="17" fill="#58f0a8"><animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/></rect>
+      <rect x="172" y="213" width="9" height="15" fill="#58f0a8"><animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/></rect>
       <circle cx="45" cy="256" r="4" fill="#58f0a8"><animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/></circle>
       <text x="58" y="261" font-size="14" fill="#9aa7b4">STATUS: <tspan fill="#e6edf3">OPEN TO WORK</tspan></text>
       <rect x="648" y="62" width="150" height="150" rx="8" fill="#0d151c" stroke="#22313c"/>

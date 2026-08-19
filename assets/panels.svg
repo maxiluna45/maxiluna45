@@ -115,11 +115,11 @@
 <rect x="32" y="214" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
 <text x="101" y="231" text-anchor="middle" font-size="11" fill="#e6edf3">LINUX</text>
 <rect x="184" y="214" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
-<text x="253" y="231" text-anchor="middle" font-size="11" fill="#e6edf3">CI/CD</text>
+<text x="253" y="231" text-anchor="middle" font-size="11" fill="#e6edf3">AI AGENTS</text>
 <rect x="336" y="214" width="138" height="26" rx="4" fill="#0a1116" stroke="#22313c"/>
 <text x="405" y="231" text-anchor="middle" font-size="11" fill="#e6edf3">GIT</text>
 <text x="32" y="268" font-size="11" fill="#5b6a77">15 MODULES LOADED</text>
-<rect x="152" y="258" width="7" height="12" fill="#58f0a8"><animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/></rect>
+<rect x="136" y="258" width="7" height="12" fill="#58f0a8"><animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/></rect>
 
 <rect x="510" y="16" width="200" height="268" rx="8" fill="#0d151c" stroke="#22313c"/>
 <rect x="510" y="16" width="200" height="40" rx="8" fill="#0f1a22"/>
@@ -187,18 +187,14 @@
 <line x1="610" y1="166" x2="610" y2="182" stroke="#5b6a77"/>
 <line x1="558" y1="130" x2="574" y2="130" stroke="#5b6a77"/>
 <line x1="646" y1="130" x2="662" y2="130" stroke="#5b6a77"/>
-<line x1="610" y1="130" x2="610" y2="100" stroke="#e6edf3" stroke-width="4" stroke-linecap="round">
-  <animateTransform attributeName="transform" type="rotate" from="0 610 130" to="360 610 130" dur="43200s" repeatCount="indefinite"/>
-</line>
-<line x1="610" y1="130" x2="610" y2="88" stroke="#e6edf3" stroke-width="3" stroke-linecap="round">
-  <animateTransform attributeName="transform" type="rotate" from="0 610 130" to="360 610 130" dur="3600s" repeatCount="indefinite"/>
-</line>
+<line x1="610" y1="130" x2="610" y2="100" stroke="#e6edf3" stroke-width="4" stroke-linecap="round" transform="rotate(89.5 610 130)"/>
+<line x1="610" y1="130" x2="610" y2="88" stroke="#e6edf3" stroke-width="3" stroke-linecap="round" transform="rotate(354 610 130)"/>
 <line x1="610" y1="130" x2="610" y2="82" stroke="#58f0a8" stroke-width="1.5" stroke-linecap="round">
-  <animateTransform attributeName="transform" type="rotate" from="0 610 130" to="360 610 130" dur="60s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="rotate" from="288 610 130" to="648 610 130" dur="60s" repeatCount="indefinite"/>
 </line>
 <circle cx="610" cy="130" r="4" fill="#58f0a8"/>
-<text x="610" y="222" text-anchor="middle" font-size="16" fill="#e6edf3">10<tspan fill="#58f0a8">:</tspan>08<tspan fill="#58f0a8">:</tspan>32</text>
-<text x="610" y="248" text-anchor="middle" font-size="12" fill="#5b6a77">SAT 2026.08.19</text>
+<text x="610" y="222" text-anchor="middle" font-size="16" fill="#e6edf3">14<tspan fill="#58f0a8">:</tspan>59<tspan fill="#58f0a8">:</tspan>48</text>
+<text x="610" y="248" text-anchor="middle" font-size="12" fill="#5b6a77">WED 2026.08.19</text>
 
 <rect x="726" y="16" width="218" height="268" rx="8" fill="#0d151c" stroke="#22313c"/>
 <rect x="726" y="16" width="218" height="40" rx="8" fill="#0f1a22"/>

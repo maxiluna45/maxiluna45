@@ -34,29 +34,14 @@
     <g font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace">
       <rect x="16" y="12" width="8" height="8" fill="#58f0a8"/>
       <text x="32" y="20" font-size="14" fill="#e6edf3" letter-spacing="2">SESSION.LOG</text>
-      <rect x="152" y="11" width="8" height="13" fill="#58f0a8">
+      <rect x="117" y="11" width="8" height="13" fill="#58f0a8">
         <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
       </rect>
       <text x="848" y="20" font-size="11" fill="#5b6a77" text-anchor="end">/var/log/career.log</text>
 
       <g>
-        <rect x="864" y="4" width="40" height="28" fill="#0a1116" stroke="#22313c"/>
-        <rect x="864" y="4" width="40" height="6" fill="#0f1a22"/>
-        <rect x="867" y="6" width="2" height="2" fill="#58f0a8"/>
-        <rect x="871" y="6" width="2" height="2" fill="#2bbf7d"/>
-        <rect x="875" y="6" width="2" height="2" fill="#126b47"/>
-        <rect x="868" y="12" width="32" height="16" fill="#05080b"/>
-        <rect x="871" y="15" width="20" height="2" fill="#2bbf7d">
-          <animate attributeName="opacity" values="0;1;1" dur="1.5s" repeatCount="indefinite"/>
-        </rect>
-        <rect x="871" y="19" width="14" height="2" fill="#126b47">
-          <animate attributeName="opacity" values="0;0;1;1" dur="1.5s" repeatCount="indefinite"/>
-        </rect>
-        <rect x="871" y="23" width="3" height="3" fill="#58f0a8">
-          <animate attributeName="opacity" values="1;1;0;0" dur="0.8s" repeatCount="indefinite"/>
-        </rect>
-        <rect x="878" y="32" width="12" height="3" fill="#22313c"/>
-        <rect x="872" y="35" width="24" height="3" fill="#22313c"/>
+        <rect x="868" y="8" width="26" height="16" rx="3" fill="#0a1116" stroke="#22313c"/>
+        <text x="872" y="20" font-size="11" fill="#58f0a8">&gt;_</text>
       </g>
 
       <line x1="16" y1="40" x2="944" y2="40" stroke="#22313c"/>
@@ -132,21 +117,20 @@
 
       <line x1="32" y1="80" x2="456" y2="80" stroke="#22313c"/>
 
-      <text x="32" y="102" font-size="11" fill="#5b6a77">2024 - NOW</text>
-      <circle cx="37" cy="115" r="3" fill="#58f0a8">
+      <text x="32" y="100" font-size="11" fill="#5b6a77">2024 - NOW</text>
+      <circle cx="37" cy="113" r="3" fill="#58f0a8">
         <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
       </circle>
-      <text x="48" y="119" font-size="14" fill="#e6edf3">OCTUPUS</text>
-      <text x="32" y="137" font-size="11" fill="#9aa7b4">Developer Automation Engineer - Full-Stack</text>
-      <text x="32" y="155" font-size="11" fill="#5b6a77">Vue / React / Django / FastAPI / Nest.js</text>
-      <text x="32" y="171" font-size="11" fill="#5b6a77">CI/CD / Jenkins / GitHub Actions / Azure</text>
-      <text x="32" y="187" font-size="11" fill="#5b6a77">Docker / Nginx / Keycloak IAM / PostgreSQL</text>
+      <text x="48" y="117" font-size="14" fill="#e6edf3">OCTUPUS</text>
+      <text x="32" y="134" font-size="11" fill="#9aa7b4">Developer Automation Engineer - Full-Stack</text>
+      <text x="32" y="150" font-size="11" fill="#5b6a77">Vue / React / Django / FastAPI / Nest.js</text>
+      <text x="32" y="166" font-size="11" fill="#5b6a77">Docker / Nginx / Keycloak IAM / PostgreSQL</text>
 
-      <line x1="32" y1="200" x2="456" y2="200" stroke="#1f2a35"/>
+      <line x1="32" y1="184" x2="456" y2="184" stroke="#1f2a35"/>
 
-      <text x="32" y="220" font-size="11" fill="#5b6a77">2018 - 2019</text>
-      <text x="32" y="238" font-size="14" fill="#e6edf3">MCAFEE</text>
-      <text x="32" y="254" font-size="11" fill="#9aa7b4">Pasantia - Soporte Tecnico / Cordoba, AR</text>
+      <text x="32" y="202" font-size="11" fill="#5b6a77">2018 - 2019</text>
+      <text x="32" y="220" font-size="14" fill="#e6edf3">MCAFEE</text>
+      <text x="32" y="236" font-size="11" fill="#9aa7b4">Pasantia - Soporte Tecnico / Cordoba, AR</text>
 
       <rect x="488" y="48" width="456" height="196" rx="8" fill="#0d151c" stroke="#22313c"/>
 <g shape-rendering="crispEdges">
@@ -219,18 +203,24 @@
 
       <line x1="504" y1="80" x2="928" y2="80" stroke="#22313c"/>
 
-      <rect x="504" y="95" width="4" height="12" fill="#58f0a8"/>
-      <text x="514" y="102" font-size="14" fill="#e6edf3">FITLOGIC</text>
-      <text x="504" y="120" font-size="11" fill="#9aa7b4">SaaS multi-tenant / 3 centros / 200+ usuarios</text>
-      <text x="504" y="138" font-size="11" fill="#5b6a77">Nuxt.js / Prisma / Supabase / Docker</text>
-      <text x="504" y="154" font-size="11" fill="#5b6a77">Analiticas IA / RBAC / Backups / Sentry</text>
+      <rect x="504" y="89" width="4" height="12" fill="#58f0a8"/>
+      <text x="514" y="96" font-size="14" fill="#e6edf3">FITLOGIC</text>
+      <text x="504" y="112" font-size="11" fill="#9aa7b4">SaaS multi-tenant / 3 centros / 200+ usuarios</text>
+      <text x="504" y="126" font-size="11" fill="#5b6a77">Nuxt.js / Prisma / Supabase / Docker</text>
 
-      <line x1="504" y1="170" x2="928" y2="170" stroke="#1f2a35"/>
+      <line x1="504" y1="136" x2="928" y2="136" stroke="#1f2a35"/>
 
-      <rect x="504" y="185" width="4" height="12" fill="#58f0a8"/>
-      <text x="514" y="192" font-size="14" fill="#e6edf3">TRAFFIC-FE</text>
-      <text x="504" y="210" font-size="11" fill="#9aa7b4">Deteccion de infracciones / OCR / React</text>
-      <text x="504" y="228" font-size="11" fill="#5b6a77">OCI Identity / JWT / Accesibilidad &lt; 3s</text>
+      <rect x="504" y="141" width="4" height="12" fill="#58f0a8"/>
+      <text x="514" y="148" font-size="14" fill="#e6edf3">FLIPEAT</text>
+      <text x="504" y="164" font-size="11" fill="#9aa7b4">SaaS multi-tenant / hamburgueserias</text>
+      <text x="504" y="178" font-size="11" fill="#5b6a77">Nuxt.js / Prisma / Supabase / MCP IA</text>
+
+      <line x1="504" y1="188" x2="928" y2="188" stroke="#1f2a35"/>
+
+      <rect x="504" y="193" width="4" height="12" fill="#58f0a8"/>
+      <text x="514" y="200" font-size="14" fill="#e6edf3">TRAFFIC-FE</text>
+      <text x="504" y="216" font-size="11" fill="#9aa7b4">Deteccion de infracciones / OCR / React</text>
+      <text x="504" y="230" font-size="11" fill="#5b6a77">OCI Identity / JWT / Accesibilidad &lt; 3s</text>
 
       <rect x="16" y="260" width="928" height="64" rx="8" fill="#0d151c" stroke="#22313c"/>
 <g shape-rendering="crispEdges">
