@@ -101,17 +101,17 @@
 <line x1="558" y1="130" x2="574" y2="130" stroke="#5b6a77"/>
 <line x1="646" y1="130" x2="662" y2="130" stroke="#5b6a77"/>
 <line x1="610" y1="130" x2="610" y2="100" stroke="#e6edf3" stroke-width="4" stroke-linecap="round">
-  <animateTransform attributeName="transform" type="rotate" from="271.3 610 130" to="631.3 610 130" dur="43200s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="rotate" from="233.1 610 130" to="593.1 610 130" dur="43200s" repeatCount="indefinite"/>
 </line>
 <line x1="610" y1="130" x2="610" y2="88" stroke="#e6edf3" stroke-width="3" stroke-linecap="round">
-  <animateTransform attributeName="transform" type="rotate" from="15.6 610 130" to="375.6 610 130" dur="3600s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="rotate" from="276.7 610 130" to="636.7 610 130" dur="3600s" repeatCount="indefinite"/>
 </line>
 <line x1="610" y1="130" x2="610" y2="82" stroke="#58f0a8" stroke-width="1.5" stroke-linecap="round">
-  <animateTransform attributeName="transform" type="rotate" from="216.0 610 130" to="576.0 610 130" dur="60s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="rotate" from="42.0 610 130" to="402.0 610 130" dur="60s" repeatCount="indefinite"/>
 </line>
 <circle cx="610" cy="130" r="4" fill="#58f0a8"/>
-<text x="610" y="222" text-anchor="middle" font-size="16" fill="#e6edf3">21<tspan fill="#58f0a8">:</tspan>02</text>
-<text x="610" y="248" text-anchor="middle" font-size="12" fill="#5b6a77">WED 2026.08.19 // UTC-3</text>
+<text x="610" y="222" text-anchor="middle" font-size="16" fill="#e6edf3">19<tspan fill="#58f0a8">:</tspan>46</text>
+<text x="610" y="248" text-anchor="middle" font-size="12" fill="#5b6a77">SUN 2026.09.06 // UTC-3</text>
 
 <rect x="726" y="16" width="218" height="268" rx="8" fill="#0d151c" stroke="#22313c"/>
 <rect x="726" y="16" width="218" height="40" rx="8" fill="#0f1a22"/>
