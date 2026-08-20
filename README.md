@@ -11,6 +11,10 @@
 </p>
 
 <p align="center">
+  <img src="./assets/vim.svg" width="900" alt="operator.jsonc abierto en vim - perfil y gustos">
+</p>
+
+<p align="center">
   <img src="./assets/stats.svg" width="900" alt="Status, capacity and contact">
 </p>
 

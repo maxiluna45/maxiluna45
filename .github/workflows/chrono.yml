@@ -1,0 +1,43 @@
+name: chrono-sync
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: chrono
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Update chrono clock
+        run: python scripts/update_chrono.py
+
+      - name: Commit and push
+        run: |
+          if git diff --quiet assets/panels.svg; then
+            echo "sin cambios"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/panels.svg
+          MSG="chore: sync chrono"
+          # amend sobre el commit anterior del bot para no acumular miles de commits
+          if [ "$(git log -1 --pretty=%s)" = "$MSG" ] && [ "$(git log -1 --pretty=%an)" = "github-actions[bot]" ]; then
+            git commit --amend -m "$MSG"
+            git push --force-with-lease
+          else
+            git commit -m "$MSG"
+            git push
+          fi

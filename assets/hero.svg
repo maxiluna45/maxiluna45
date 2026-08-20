@@ -23,6 +23,7 @@
     <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse">
       <line x1="0" y1="0.5" x2="4" y2="0.5" stroke="#000000" stroke-opacity="0.22" stroke-width="1"/>
     </pattern>
+    <pattern id="dots1" width="22" height="22" patternUnits="userSpaceOnUse"><rect x="10" y="10" width="1.6" height="1.6" fill="#58f0a8" fill-opacity="0.05"/></pattern>
     <clipPath id="clip"><rect x="0" y="0" width="960" height="300" rx="10"/></clipPath>
   </defs>
   <rect width="960" height="300" rx="10" fill="url(#bg)"/>
@@ -30,6 +31,7 @@
     <rect x="0" y="-300" width="960" height="300" fill="url(#roll)">
       <animateTransform attributeName="transform" type="translate" from="0 0" to="0 600" dur="8s" repeatCount="indefinite"/>
     </rect>
+    <rect width="960" height="300" fill="url(#dots1)"/>
     <g font-family="Consolas, 'Courier New', monospace">
       <circle cx="24" cy="18" r="5" fill="#126b47"/>
       <circle cx="42" cy="18" r="5" fill="#2bbf7d"/>
@@ -48,6 +50,8 @@
       <rect x="172" y="213" width="9" height="15" fill="#58f0a8"><animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/></rect>
       <circle cx="45" cy="256" r="4" fill="#58f0a8"><animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/></circle>
       <text x="58" y="261" font-size="14" fill="#9aa7b4">STATUS: <tspan fill="#e6edf3">OPEN TO WORK</tspan></text>
+      <text x="40" y="287" font-size="11" fill="#4d5d6b">[ OK ] boot sequence complete // 15 modules // 0 errors</text>
+      <text x="920" y="287" font-size="11" fill="#4d5d6b" text-anchor="end">tty0 attached</text>
       <rect x="648" y="62" width="150" height="150" rx="8" fill="#0d151c" stroke="#22313c"/>
       <rect x="648" y="62" width="150" height="26" rx="8" fill="#0f1a22"/>
       <rect x="648" y="80" width="150" height="8" fill="#0f1a22"/>
@@ -76,9 +80,9 @@
         <rect x="753" y="136" width="6" height="6" fill="#063a26"/>
         <rect x="687" y="142" width="72" height="6" fill="#063a26"/>
         <rect x="687" y="148" width="6" height="6" fill="#063a26"/>
-        <rect x="693" y="148" width="6" height="6" fill="#58f0a8"/>
+        <rect x="693" y="148" width="6" height="6" fill="#58f0a8"><animate attributeName="opacity" values="1;1;0.15;1" keyTimes="0;0.88;0.94;1" dur="4.5s" repeatCount="indefinite"/></rect>
         <rect x="699" y="148" width="42" height="6" fill="#063a26"/>
-        <rect x="741" y="148" width="6" height="6" fill="#58f0a8"/>
+        <rect x="741" y="148" width="6" height="6" fill="#58f0a8"><animate attributeName="opacity" values="1;1;0.15;1" keyTimes="0;0.88;0.94;1" dur="4.5s" repeatCount="indefinite"/></rect>
         <rect x="747" y="148" width="12" height="6" fill="#063a26"/>
         <rect x="687" y="154" width="6" height="6" fill="#063a26"/>
         <rect x="693" y="154" width="60" height="6" fill="#2bbf7d"/>
@@ -123,6 +127,7 @@
         <rect x="747" y="208" width="12" height="6" fill="#126b47"/>
         <rect x="759" y="208" width="12" height="6" fill="#063a26"/>
       </g>
+      <rect x="649" y="90" width="148" height="8" fill="#9ff5c7" opacity="0.07"><animate attributeName="y" values="90;203;90" dur="6s" repeatCount="indefinite"/></rect>
       <text x="648" y="238" font-size="13" fill="#9aa7b4">LOC: <tspan fill="#e6edf3">CORDOBA, AR</tspan></text>
       <text x="648" y="262" font-size="13" fill="#9aa7b4">ROLE: <tspan fill="#e6edf3">DEVOPS + FULLSTACK</tspan></text>
     </g>
